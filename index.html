@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form Pendaftaran">
+    <title>Form Pendaftaran Lomba</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="bg">
+        </br>
+        <b>
+            <h1>FORMULIR PENDAFTARAN</h1>
+        </b>
+        </br>
+            <h3>Pekan Olahraga dan Seni Guru TKA/TPA</h3>
+            <h3>Tahun 2020</h3>
+        </br>
+        <div id="form">
+            <form action="#" onsubmit="return validateForm()" method="post" name="myForm">
+                <table id="table">
+                    <tr>
+                        <td>NAMA: </td>
+                        <td>
+                            <input type="text" name="username" size="50" maxlength="50"
+                                placeholder="Masukkan Nama Anda" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TEMPAT TANGGAL LAHIR:
+                        </td>
+                        <td>
+                            <input type="number" name="day" size="2" maxlength="2" placeholder="Day" min="1" max="31" />
+                            <select name="month">
+                                <option value="month">Month</option>
+                                <option value="Jan">Januari</option>
+                                <option value="Feb">Februari</option>
+                                <option value="Mar">Maret</option>
+                                <option value="Apr">April</option>
+                                <option value="May">Mei</option>
+                                <option value="June">Juni</option>
+                                <option value="July">Juli</option>
+                                <option value="Aug">Agustus</option>
+                                <option value="Sep">September</option>
+                                <option value="Oct">Oktober</option>
+                                <option value="Nov">November</option>
+                                <option value="Dec">Desember</option>
+                            
+                            </select>
+                            <input type="text" name="year" size="5" maxlength="4" placeholder="Year" min="1970" max="2008" />
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            UTUSAN UNIT TKA/TPA:
+                        </td>
+                        <td>
+                            <input type="text" name="unit" size="50" maxlength="50" placeholder="Masukkan Unit Anda" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>KELURAHAN/DESA</td>
+                        <td>
+                            <input type="text" name="kelurahan" size="50" maxlength="50" placeholder="Masukkan Kelurahan/Desa Anda" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>KECAMATAN</td>
+                        <td>
+                            <input type="text" name="kecamatan" size="50" maxlength="50" placeholder="Masukkan Kecamatan Anda" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>NOMOR TELEPON</td>
+                        <td>
+                            <input type="tel" name="nomor" size="30" maxlength="12" placeholder="Masukkan Nomor Telepon Anda (Max 12 Nomor)" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JENIS LOMBA</td>
+                        <td>
+                            <select id="cars" name="cars">
+                                <option value="tarik_tambang">Tarik Tambang (4 Perempuan + 1 Laki = 5 Orang)</option>
+                                <option value="lari_estafet">Lari Estafet (4 Perempuan)</option>
+                                <option value="gobak_sodor">Gobak Sodor (4 Perempuan)</option>
+                                <option value="tartil">Tartil (1 Orang Perwakilan TKA/TPA)</option>
+                                <option value="ceramah">Ceramah (1 Orang Perwakilan TKA/TPA)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UPLOAD TANDA TANGAN PESERTA: </td>
+                        <td>
+                            <input type="file" name="file" id="file" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
